@@ -1,3 +1,109 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar-wagon {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.navbar-wagon-brand {
+  color: white;
+  font-size: 24px;
+}
+
+.navbar-wagon-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-wagon-item {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.navbar-wagon-link {
+  color: white;
+  font-size: 14px;
+}
+.navbar-wagon-link:hover {
+  color: #da552f;
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 70px;
+}
+
+p {
+  margin-bottom: 70px;
+  line-height: 1.6rem;
+  color: white;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  line-height: 2rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.form-control {
+  margin-bottom: 70px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 150px;
+  color: white;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+
+.btn-medium {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+.btn-medium:hover {
+  opacity: 0.6;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.my-text {
+  color: white;
+  font-size: 1.2rem;
+}
+
+

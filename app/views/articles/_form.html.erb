@@ -1,9 +1,18 @@
-<%= form_for(@article) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <br>
-  <%= f.label :content %>
-  <%= f.text_field :content %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<div class="container text-center">
+  <ul>
+    <%= form_for(@article) do |f| %>
+      <li>
+        <%= f.label :title, :class => 'col-form-label my-text'%>
+        <%= f.text_field :title, :class => 'form-control form-control-plaintext form-row form-text form-check' %>
+      </li>
+      <li>
+        <%= f.label :content, :class => 'col-form-label my-text'%>
+        <%= f.text_field :content, :class => ' form-control form-row form-control-plaintext form-check' %>
+      </li>
+      <li>
+        <%= f.submit 'Update', :class => 'btn-medium' %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

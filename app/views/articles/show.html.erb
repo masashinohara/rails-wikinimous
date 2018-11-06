@@ -1,8 +1,12 @@
-<h1><%= @article.title %></h1>
+<div class="container">
+  <h2><%= @article.title %></h2>
 
-<%= link_to 'edit', edit_article_path(@article) %> | <%= link_to 'delete', article_path(@article), method: :delete,
-      data: { confirm: "Are you sure?" }   %>
+  <p>
+    <%= link_to 'edit', edit_article_path(@article) %> | <%= link_to 'delete', article_path(@article), method: :delete,
+        data: { confirm: "Are you sure?" }   %>
+  </p>
 
-<p><%= @article.content %></p>
 
-<%= link_to 'Home', articles_path %>
+  <p><%= @article.content %></p>
+</div>
+
