@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(articles_params)
-    if @articles.save
+    if @article.save
       redirect_to articles_path
     else
       render :new
@@ -46,5 +46,4 @@ class ArticlesController < ApplicationController
   def articles_params
     params.require(:article).permit(:title, :content)
   end
-
 end
