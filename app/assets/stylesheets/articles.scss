@@ -58,7 +58,6 @@ p {
 }
 
 ul {
-  text-align: center;
   list-style-type: none;
   line-height: 2rem;
 }
@@ -77,7 +76,7 @@ a:hover {
 .form-control {
   margin-bottom: 70px;
   background: rgba(255, 255, 255, 0.1);
-  height: 150px;
+  height: 70px;
   color: white;
 }
 
@@ -88,6 +87,7 @@ a:hover {
 
 
 .btn-medium {
+  font-size: 0.8rem;
   color: white;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid white;
@@ -103,7 +103,6 @@ a:hover {
 
 .my-text {
   color: white;
-  font-size: 1.2rem;
 }
 
 

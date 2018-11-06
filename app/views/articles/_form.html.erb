@@ -1,18 +1,11 @@
-<div class="container text-center">
-  <ul>
-    <%= form_for(@article) do |f| %>
-      <li>
-        <%= f.label :title, :class => 'col-form-label my-text'%>
-        <%= f.text_field :title, :class => 'form-control form-control-plaintext form-row form-text form-check' %>
-      </li>
-      <li>
-        <%= f.label :content, :class => 'col-form-label my-text'%>
-        <%= f.text_field :content, :class => ' form-control form-row form-control-plaintext form-check' %>
-      </li>
-      <li>
-        <%= f.submit 'Upload', :class => 'btn-medium' %>
-      </li>
-    <% end %>
-  </ul>
+<div class="container">
+  <h2>Upload article</h2>
 
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title, :class => 'my-text'%>
+    <%= f.text_field :title, :class => 'form-control form-control-plaintext' %>
+    <%= f.label :content, :class => 'my-text'%>
+    <%= f.text_field :content, :class => ' form-control form-control-plaintext' %>
+    <%= f.submit 'Upload', :class => 'btn-medium' %>
+  <% end %>
 </div>
