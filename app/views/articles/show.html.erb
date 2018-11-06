@@ -3,7 +3,7 @@
 
   <p>
     <%= link_to 'edit', edit_article_path(@article), { :class => 'btn-medium'} %>
-    <%= link_to 'delete', article_path(@article), method: :delete, :class => 'btn-medium' %>
+    <%= link_to 'delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, :class => 'btn-medium' %>
   </p>
 
 
